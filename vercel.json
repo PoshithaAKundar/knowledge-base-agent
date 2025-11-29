@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm --prefix web ci && npm --prefix web run build",
+  "buildCommand": "npx vite build",
   "installCommand": "npm --prefix web ci",
   "outputDirectory": "web/dist",
   "framework": "vite"
