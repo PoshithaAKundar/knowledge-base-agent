@@ -1,0 +1,44 @@
+# --- Web API ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Document Processing ---
+pypdf==5.0.0
+pdfminer.six==20231228
+python-docx==1.1.2
+beautifulsoup4==4.12.3
+readability-lxml==0.8.1
+lxml==5.3.0
+
+# --- Text / NLP Utilities ---
+nltk==3.9.1
+regex==2024.5.15
+
+# --- Core Scientific Stack ---
+# Use NumPy 1.26.x (widely compatible with scikit-learn, faiss, chromadb, etc.)
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# --- ML / Embeddings ---
+torch==2.3.0
+sentence-transformers==2.7.0
+
+# --- Vector Stores ---
+faiss-cpu==1.8.0
+chromadb==0.5.4
+
+# --- LLM / RAG Stack ---
+openai==1.40.0
+langchain==0.2.14
+langchain-community==0.2.12
+jinja2==3.1.4
+
+# --- Config / Utils ---
+python-dotenv==1.0.1
+tqdm==4.66.5
+pydantic==2.8.2
+pydantic-settings==2.4.0
+
+# --- Optional: Retrieval & Tokenization ---
+rank-bm25==0.2.2
+sentencepiece==0.2.0

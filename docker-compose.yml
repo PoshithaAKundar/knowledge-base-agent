@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+api:
+build: ./backend
+command: uvicorn app:app --host 0.0.0.0 --port 8000
+env_file: .env
+volumes:
+- ./backend:/app
+- ./data:/app/../data
+ports:
+- "8000:8000"
+web:
+build: ./web
+command: ["npm", "run", "dev", "--", "--host"]
+volumes:
+- ./web:/usr/src/app
+environment:
+- VITE_API_BASE=http://localhost:8000
+ports:
+- "5173:5173"
