@@ -1,4 +1,6 @@
 {
-  "buildCommand": "cd web && npx vite build",
-  "installCommand": "cd web && npm install"
+  "installCommand": "npm --prefix web ci || (cd web && npm install)",
+  "buildCommand": "npm --prefix web run build",
+  "outputDirectory": "web/dist",
+  "framework": "vite"
 }
